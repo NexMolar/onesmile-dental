@@ -178,7 +178,12 @@
     justify-content: center;
   }
 
-  .hero-visual img { width: 100%; max-width: 420px; }
+  .hero-visual img.hero-photo-img {
+    width: auto;
+    height: clamp(360px, 42vw, 520px);
+    max-width: 100%;
+    display: block;
+  }
 
   .float-card {
     position: absolute;
@@ -880,7 +885,7 @@
 <div class="header-wrap">
   <header id="top">
     <div class="logo-block">
-      <img src="assets/logo.svg" alt="onesmile Dental">
+      <img src="assets/OneSmile_Logo.png" alt="onesmile Dental">
     </div>
     <nav class="main-nav">
       <a href="#top">Home</a>
@@ -919,7 +924,7 @@
       </a>
     </div>
     <div class="hero-visual">
-      <img src="assets/hero-doctor.svg" alt="Illustration of Dr. Vishnuja in a white coat with a stethoscope">
+      <img src="assets/hero-doctor.png" alt="Dr. Vishnuja smiling in a white coat with a stethoscope" class="hero-photo-img">
       <div class="float-card support-card">
         <div class="avatar-stack">
           <span>DR</span><span>RK</span><span>AS</span><span>+</span>
@@ -1203,7 +1208,7 @@
 <footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-col footer-brand">
-      <img src="assets/logo.svg" alt="onesmile Dental">
+      <img src="assets/OneSmile_Logo.png" alt="onesmile Dental">
       <p>Compassionate dental care, a trusted specialist, and modern treatments for every smile in Yelahanka.</p>
       <form class="footer-newsletter" onsubmit="return false">
         <input type="email" placeholder="Enter Email Id" aria-label="Email address" required>
